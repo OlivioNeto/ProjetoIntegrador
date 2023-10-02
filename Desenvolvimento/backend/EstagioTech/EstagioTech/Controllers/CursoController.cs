@@ -1,0 +1,55 @@
+﻿using EstagioTech.Models;
+using EstagioTech.Repositorios.Interfaces;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace EstagioTech.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CursoController : ControllerBase
+    {
+        private readonly ICursoRepositorio _curso;
+        public CursoController(ICursoRepositorio curso)
+        {
+            _curso = curso;
+        }
+
+        [HttpGet]
+
+        public async Task<ActionResult<List<CursoModel>>> BuscarTodosTiposEstagio()
+        {
+            List<CursoModel> curso = await _curso.BuscarTodosTiposEstagios();
+            return Ok(curso);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<CursoModel>>> BuscarPorId(int id)
+        {
+            CursoModel curso = await _curso.BuscarPorId(id);
+            return Ok(curso);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<CursoModel>> Cadastrar([FromBody] CursoModel CursoModel)
+        {
+            CursoModel curso =  await _curso.Adicionar(CursoModel);
+            return Ok(curso);
+        }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<CursoModel>> Atualizar([FromBody] CursoModel CursoModel, int id)
+        {
+            CursoModel.idCurso = id;
+            CursoModel tipoEstagio = await _curso.Atualizar(CursoModel, id);
+            return Ok(tipoEstagio);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<CursoModel>> Apagar(int id)
+        {
+            bool apagado = await _curso.Apagar(id);
+            return Ok(apagado);
+        }
+    }
+}
