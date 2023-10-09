@@ -26,14 +26,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/gabrielsantos578">
-        <img src="https://avatars.githubusercontent.com/u/127057846?v=4" width="100px;" alt="Foto do Homi"/><br>
-        <sub>
-          <b>Gabriel Machado</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/Gui-Angelo-Silva">
         <img src="https://avatars.githubusercontent.com/u/128407937?v=4" width="100px;" alt="Foto do Henrique"/><br>
         <sub>
