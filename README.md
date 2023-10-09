@@ -27,6 +27,14 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="https://github.com/Gui-Angelo-Silva">
+        <img src="https://avatars.githubusercontent.com/u/128404348?v=4" width="100px;" alt="Foto do Gabriel"/><br>
+        <sub>
+          <b>Gabriel Godoy</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Gui-Angelo-Silva">
         <img src="https://avatars.githubusercontent.com/u/128407937?v=4" width="100px;" alt="Foto do Henrique"/><br>
         <sub>
           <b>Henrique Criado</b>
