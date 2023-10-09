@@ -19,9 +19,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   <tr>
     <td align="center">
       <a href="https://github.com/EduardoLoppes">
-        <img src="https://avatars.githubusercontent.com/u/104988705?v=4" width="100px;" alt="Foto do Popis"/><br>
+        <img src="https://avatars.githubusercontent.com/u/117771891?v=4" width="100px;" alt="Foto do Caio"/><br>
         <sub>
-          <b>Eduardo Lopes</b>
+          <b>Caio Cardeliquio</b>
         </sub>
       </a>
     </td>
@@ -35,9 +35,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="https://github.com/Gui-Angelo-Silva">
-        <img src="https://avatars.githubusercontent.com/u/100084412?v=4" width="100px;" alt="Foto do Guilhemre Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/128407937?v=4" width="100px;" alt="Foto do Henrique"/><br>
         <sub>
-          <b>Guilherme Silva</b>
+          <b>Henrique Criado</b>
         </sub>
       </a>
     </td>
