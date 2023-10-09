@@ -49,5 +49,13 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/gabrielsantos578">
+        <img src="https://avatars.githubusercontent.com/u/127052042?s=400&u=a97fe9a7bd5cd37a766bb04c2c1a30b39107f419&v=4" width="100px;" alt="Foto do Olívio"/><br>
+        <sub>
+          <b>Olívio Neto</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
