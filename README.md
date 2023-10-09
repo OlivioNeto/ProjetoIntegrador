@@ -43,9 +43,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="https://github.com/JoaoNeto132">
-        <img src="https://avatars.githubusercontent.com/u/105755085?v=4" width="100px;" alt="Foto do Guilhemre Silva no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/126285775?v=4" width="100px;" alt="Foto do Julio"/><br>
         <sub>
-          <b>João Neto</b>
+          <b>Julio Barbosa</b>
         </sub>
       </a>
     </td>
