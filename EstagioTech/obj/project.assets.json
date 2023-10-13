@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\EstagioTech\\EstagioTech\\EstagioTech.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\ProjetoIntegrador\\EstagioTech\\EstagioTech.csproj",
       "projectName": "EstagioTech",
-      "projectPath": "C:\\src\\EstagioTech\\EstagioTech\\EstagioTech.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\ProjetoIntegrador\\EstagioTech\\EstagioTech.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\EstagioTech\\EstagioTech\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\ProjetoIntegrador\\EstagioTech\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
