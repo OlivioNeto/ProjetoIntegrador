@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EstagioTech.Migrations
 {
     /// <inheritdoc />
-    public partial class CriandoBanco : Migration
+    public partial class Cri : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,6 +22,19 @@ namespace EstagioTech.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Curso", x => x.idCurso);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TipoDocumento",
+                columns: table => new
+                {
+                    idTipoDocumento = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    descricaoTipoDocumento = table.Column<string>(type: "character varying(200)", maxLength: 200, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoDocumento", x => x.idTipoDocumento);
                 });
 
             migrationBuilder.CreateTable(
@@ -43,6 +56,9 @@ namespace EstagioTech.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Curso");
+
+            migrationBuilder.DropTable(
+                name: "TipoDocumento");
 
             migrationBuilder.DropTable(
                 name: "TipoEstagio");
