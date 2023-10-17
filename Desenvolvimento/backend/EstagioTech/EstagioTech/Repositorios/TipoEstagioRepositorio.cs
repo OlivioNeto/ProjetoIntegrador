@@ -1,4 +1,4 @@
-﻿using EstagioTech.Data;
+using EstagioTech.Data;
 using EstagioTech.Models;
 using EstagioTech.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +30,7 @@ namespace EstagioTech.Repositorios
 
             return tipoEstagio;
         }
+
         public async Task<TipoEstagioModel> Atualizar(TipoEstagioModel tipoEstagio)
         {
             TipoEstagioModel tipoEstagioPorId = await BuscarPorId(tipoEstagio.idTipoEstagio);
@@ -37,6 +38,15 @@ namespace EstagioTech.Repositorios
             if (tipoEstagioPorId == null)
             {
                 throw new Exception($"O id: {tipoEstagio.idTipoEstagio} do tipo estágio não foi encontrado no banco");
+                
+        public async Task<TipoEstagioModel> Atualizar(TipoEstagioModel tipoEstagio, int id)
+        {
+            TipoEstagioModel tipoEstagioPorId = await BuscarPorId(id);
+
+            if (tipoEstagioPorId == null)
+            {
+                throw new Exception($"O id: {id} do tipo estágio não foi encontrado no banco");
+
             }
             tipoEstagioPorId.descricaoTipoEstagio = tipoEstagio.descricaoTipoEstagio;
 

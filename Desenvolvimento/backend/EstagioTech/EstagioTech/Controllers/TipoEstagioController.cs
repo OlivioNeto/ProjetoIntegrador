@@ -1,4 +1,4 @@
-﻿using EstagioTech.Models;
+using EstagioTech.Models;
 using EstagioTech.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -41,6 +41,7 @@ namespace EstagioTech.Controllers
         public async Task<ActionResult<TipoEstagioModel>> Atualizar([FromBody] TipoEstagioModel tipoEstagioModel)
         {
             TipoEstagioModel tipoEstagio = await _tipoEstagioRepositorio.Atualizar(tipoEstagioModel);
+
             return Ok(tipoEstagio);
         }
 

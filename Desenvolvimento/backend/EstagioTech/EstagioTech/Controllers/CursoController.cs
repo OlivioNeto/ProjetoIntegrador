@@ -1,4 +1,4 @@
-﻿using EstagioTech.Models;
+using EstagioTech.Models;
 using EstagioTech.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +36,7 @@ namespace EstagioTech.Controllers
             CursoModel curso =  await _curso.Adicionar(CursoModel);
             return Ok(curso);
         }
+
 
         [HttpPut]
         public async Task<ActionResult<CursoModel>> Atualizar([FromBody] CursoModel CursoModel)

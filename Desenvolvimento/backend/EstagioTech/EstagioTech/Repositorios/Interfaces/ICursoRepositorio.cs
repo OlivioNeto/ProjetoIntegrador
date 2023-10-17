@@ -1,4 +1,4 @@
-﻿using EstagioTech.Models;
+using EstagioTech.Models;
 
 namespace EstagioTech.Repositorios.Interfaces
 {
@@ -10,7 +10,10 @@ namespace EstagioTech.Repositorios.Interfaces
 
         Task<CursoModel> Adicionar(CursoModel curso);
 
+
         Task<CursoModel> Atualizar(CursoModel curso);
+        Task<CursoModel> Atualizar(CursoModel curso, int id);
+
 
         Task<bool> Apagar(int id);
     }
