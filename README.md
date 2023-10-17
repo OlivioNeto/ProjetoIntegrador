@@ -20,7 +20,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/EduardoLoppes">
+      <a href="https://github.com/CaioGabrielZzz">
         <img src="https://avatars.githubusercontent.com/u/117771891?v=4" width="100px;" alt="Foto do Caio"/><br>
         <sub>
           <b>Caio Cardeliquio</b>
@@ -36,7 +36,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Gui-Angelo-Silva">
+      <a href="https://github.com/henriquecriado">
         <img src="https://avatars.githubusercontent.com/u/128407937?v=4" width="100px;" alt="Foto do Henrique"/><br>
         <sub>
           <b>Henrique Criado</b>
@@ -44,7 +44,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/JoaoNeto132">
+      <a href="https://github.com/julioBarbosa33">
         <img src="https://avatars.githubusercontent.com/u/126285775?v=4" width="100px;" alt="Foto do Julio"/><br>
         <sub>
           <b>Julio Barbosa</b>
@@ -52,7 +52,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/gabrielsantos578">
+      <a href="https://github.com/OlivioNeto">
         <img src="https://avatars.githubusercontent.com/u/127052042?s=400&u=a97fe9a7bd5cd37a766bb04c2c1a30b39107f419&v=4" width="100px;" alt="Foto do Olívio"/><br>
         <sub>
           <b>Olívio Neto</b>
