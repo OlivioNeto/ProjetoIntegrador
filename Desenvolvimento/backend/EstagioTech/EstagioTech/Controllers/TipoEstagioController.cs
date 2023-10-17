@@ -1,4 +1,4 @@
-﻿using EstagioTech.Models;
+using EstagioTech.Models;
 using EstagioTech.Repositorios.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -37,11 +37,11 @@ namespace EstagioTech.Controllers
             return Ok(tipoEstagio);
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<TipoEstagioModel>> Atualizar([FromBody] TipoEstagioModel tipoEstagioModel, int id)
+        [HttpPut]
+        public async Task<ActionResult<TipoEstagioModel>> Atualizar([FromBody] TipoEstagioModel tipoEstagioModel)
         {
-            tipoEstagioModel.idTipoEstagio = id;
-            TipoEstagioModel tipoEstagio = await _tipoEstagioRepositorio.Atualizar(tipoEstagioModel, id);
+            TipoEstagioModel tipoEstagio = await _tipoEstagioRepositorio.Atualizar(tipoEstagioModel);
+
             return Ok(tipoEstagio);
         }
 

@@ -1,4 +1,4 @@
-﻿using EstagioTech.Data;
+using EstagioTech.Data;
 using EstagioTech.Models;
 using EstagioTech.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +30,19 @@ namespace EstagioTech.Repositorios
 
             return curso;
         }
+
+        public async Task<CursoModel> Atualizar(CursoModel curso)
+        {
+            CursoModel CursoPorId = await BuscarPorId(curso.idCurso);
+
+            if (CursoPorId == null)
+            {
+                throw new Exception($"O id: {curso.idCurso} do Curso não foi encontrado no banco");
+            }
+            CursoPorId.nomeCurso = curso.nomeCurso;
+
+            _dbContext.Curso.Update(CursoPorId);
+
         public async Task<CursoModel> Atualizar(CursoModel curso, int id)
         {
             CursoModel CursoPorId = await BuscarPorId(id);
@@ -41,6 +54,7 @@ namespace EstagioTech.Repositorios
             CursoPorId.nomeCurso = curso.nomeCurso;
 
             _dbContext.Curso.Update(curso);
+
             await _dbContext.SaveChangesAsync();
 
             return CursoPorId;
