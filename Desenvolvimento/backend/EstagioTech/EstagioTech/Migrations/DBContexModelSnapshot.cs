@@ -39,6 +39,34 @@ namespace EstagioTech.Migrations
                     b.ToTable("Curso");
                 });
 
+            modelBuilder.Entity("EstagioTech.Models.DocumentoModel", b =>
+                {
+                    b.Property<int>("idDocumento")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("idDocumento"));
+
+                    b.Property<string>("descricaoDocumento")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("documento")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("situacaoDocumento")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.HasKey("idDocumento");
+
+                    b.ToTable("Documento");
+                });
+
             modelBuilder.Entity("EstagioTech.Models.TipoDocumentoModel", b =>
                 {
                     b.Property<int>("idTipoDocumento")

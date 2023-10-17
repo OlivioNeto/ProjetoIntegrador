@@ -30,17 +30,17 @@ namespace EstagioTech.Repositorios
 
             return curso;
         }
-        public async Task<CursoModel> Atualizar(CursoModel curso, int id)
+        public async Task<CursoModel> Atualizar(CursoModel curso)
         {
-            CursoModel CursoPorId = await BuscarPorId(id);
+            CursoModel CursoPorId = await BuscarPorId(curso.idCurso);
 
             if (CursoPorId == null)
             {
-                throw new Exception($"O id: {id} do Curso não foi encontrado no banco");
+                throw new Exception($"O id: {curso.idCurso} do Curso não foi encontrado no banco");
             }
             CursoPorId.nomeCurso = curso.nomeCurso;
 
-            _dbContext.Curso.Update(curso);
+            _dbContext.Curso.Update(CursoPorId);
             await _dbContext.SaveChangesAsync();
 
             return CursoPorId;

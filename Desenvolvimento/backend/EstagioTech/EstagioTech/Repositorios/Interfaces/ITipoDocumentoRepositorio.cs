@@ -10,7 +10,7 @@ namespace EstagioTech.Repositorios.Interfaces
 
         Task<TipoDocumentoModel> Adicionar(TipoDocumentoModel tipoDocumento);
 
-        Task<TipoDocumentoModel> Atualizar(TipoDocumentoModel tipoDocumento, int id);
+        Task<TipoDocumentoModel> Atualizar(TipoDocumentoModel tipoDocumento);
 
         Task<bool> Apagar(int id);
     }

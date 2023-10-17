@@ -10,7 +10,7 @@ namespace EstagioTech.Repositorios.Interfaces
 
         Task<CursoModel> Adicionar(CursoModel curso);
 
-        Task<CursoModel> Atualizar(CursoModel curso, int id);
+        Task<CursoModel> Atualizar(CursoModel curso);
 
         Task<bool> Apagar(int id);
     }

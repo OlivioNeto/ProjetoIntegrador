@@ -37,11 +37,10 @@ namespace EstagioTech.Controllers
             return Ok(tipoDocumento);
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<TipoDocumentoModel>> Atualizar([FromBody] TipoDocumentoModel tipoDocumentoModel, int id)
+        [HttpPut]
+        public async Task<ActionResult<TipoDocumentoModel>> Atualizar([FromBody] TipoDocumentoModel tipoDocumentoModel)
         {
-            tipoDocumentoModel.idTipoDocumento= id;
-            TipoDocumentoModel tipoDocumento = await _tipoDocumentoRepositorio.Atualizar(tipoDocumentoModel, id);
+            TipoDocumentoModel tipoDocumento = await _tipoDocumentoRepositorio.Atualizar(tipoDocumentoModel);
             return Ok(tipoDocumento);
         }
 

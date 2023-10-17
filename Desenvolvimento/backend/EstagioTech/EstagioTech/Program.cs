@@ -26,6 +26,7 @@ namespace EstagioTech
             builder.Services.AddTransient<ITipoEstagioRepositorio, TipoEstagioRepositorio>();
             builder.Services.AddTransient<ICursoRepositorio, CursoRepositorio>();
             builder.Services.AddTransient<ITipoDocumentoRepositorio, TipoDocumentoRepositorio>();
+            builder.Services.AddTransient<IDocumentoRepositorio, DocumentoRepositorio>();
 
             var app = builder.Build();
 

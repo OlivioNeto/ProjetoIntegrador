@@ -30,13 +30,13 @@ namespace EstagioTech.Repositorios
         }
 
 
-        public async Task<TipoDocumentoModel> Atualizar(TipoDocumentoModel tipoDocumento, int id)
+        public async Task<TipoDocumentoModel> Atualizar(TipoDocumentoModel tipoDocumento)
         {
-            TipoDocumentoModel tipoDocumentoPorId = await BuscarPorId(id);
+            TipoDocumentoModel tipoDocumentoPorId = await BuscarPorId(tipoDocumento.idTipoDocumento);
 
             if (tipoDocumentoPorId == null)
             {
-                throw new Exception($"O id: {id} do tipo documento não foi encontrado no banco");
+                throw new Exception($"O id: {tipoDocumento.idTipoDocumento} do tipo documento não foi encontrado no banco");
             }
             tipoDocumentoPorId.descricaoTipoDocumento = tipoDocumento.descricaoTipoDocumento;
 

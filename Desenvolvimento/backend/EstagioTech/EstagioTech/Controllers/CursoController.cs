@@ -37,11 +37,10 @@ namespace EstagioTech.Controllers
             return Ok(curso);
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<CursoModel>> Atualizar([FromBody] CursoModel CursoModel, int id)
+        [HttpPut]
+        public async Task<ActionResult<CursoModel>> Atualizar([FromBody] CursoModel CursoModel)
         {
-            CursoModel.idCurso = id;
-            CursoModel tipoEstagio = await _curso.Atualizar(CursoModel, id);
+            CursoModel tipoEstagio = await _curso.Atualizar(CursoModel);
             return Ok(tipoEstagio);
         }
 

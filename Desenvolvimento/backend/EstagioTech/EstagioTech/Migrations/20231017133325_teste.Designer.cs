@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EstagioTech.Migrations
 {
     [DbContext(typeof(DBContex))]
-    [Migration("20231013143201_Cri")]
-    partial class Cri
+    [Migration("20231017133325_teste")]
+    partial class teste
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,34 @@ namespace EstagioTech.Migrations
                     b.HasKey("idCurso");
 
                     b.ToTable("Curso");
+                });
+
+            modelBuilder.Entity("EstagioTech.Models.DocumentoModel", b =>
+                {
+                    b.Property<int>("idDocumento")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("idDocumento"));
+
+                    b.Property<string>("descricaoDocumento")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("documento")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.Property<string>("situacaoDocumento")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("character varying(200)");
+
+                    b.HasKey("idDocumento");
+
+                    b.ToTable("Documento");
                 });
 
             modelBuilder.Entity("EstagioTech.Models.TipoDocumentoModel", b =>

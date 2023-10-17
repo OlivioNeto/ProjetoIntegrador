@@ -30,13 +30,13 @@ namespace EstagioTech.Repositorios
 
             return tipoEstagio;
         }
-        public async Task<TipoEstagioModel> Atualizar(TipoEstagioModel tipoEstagio, int id)
+        public async Task<TipoEstagioModel> Atualizar(TipoEstagioModel tipoEstagio)
         {
-            TipoEstagioModel tipoEstagioPorId = await BuscarPorId(id);
+            TipoEstagioModel tipoEstagioPorId = await BuscarPorId(tipoEstagio.idTipoEstagio);
 
             if (tipoEstagioPorId == null)
             {
-                throw new Exception($"O id: {id} do tipo estágio não foi encontrado no banco");
+                throw new Exception($"O id: {tipoEstagio.idTipoEstagio} do tipo estágio não foi encontrado no banco");
             }
             tipoEstagioPorId.descricaoTipoEstagio = tipoEstagio.descricaoTipoEstagio;
 

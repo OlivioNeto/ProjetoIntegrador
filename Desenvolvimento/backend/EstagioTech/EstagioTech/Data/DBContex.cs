@@ -16,11 +16,14 @@ namespace EstagioTech.Data
 
         public DbSet<TipoDocumentoModel> TipoDocumento { get; set; }
 
+        public DbSet<DocumentoModel> Documento { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new TipoEstagioMap());
             modelBuilder.ApplyConfiguration(new CursoMap());
             modelBuilder.ApplyConfiguration(new TipoDocumentoMap());
+            modelBuilder.ApplyConfiguration(new DocumentoMap());
             base.OnModelCreating(modelBuilder);
         }
     }

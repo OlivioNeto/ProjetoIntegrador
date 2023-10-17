@@ -10,7 +10,7 @@ namespace EstagioTech.Repositorios.Interfaces
 
         Task <TipoEstagioModel> Adicionar(TipoEstagioModel tipoEstagio);
 
-        Task<TipoEstagioModel> Atualizar(TipoEstagioModel tipoEstagio, int id);
+        Task<TipoEstagioModel> Atualizar(TipoEstagioModel tipoEstagio);
 
         Task<bool> Apagar(int id);
     }
